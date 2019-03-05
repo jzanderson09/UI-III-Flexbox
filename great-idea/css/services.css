@@ -66,10 +66,10 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-    border: 2px solid red;
 	margin: 20px auto;
 	text-align: center;
-	width: 1000px;
+    width: 1000px;
+    height: auto;
 }
 
 .container .nav-bar {
@@ -90,6 +90,11 @@ h1, h2, h3, h4, h5 {
 .container .nav-bar .links a {
     color: gray;
     text-decoration: none;
+}
+
+.container .nav-bar .links a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .container .nav-bar .logo {
@@ -124,14 +129,85 @@ h1, h2, h3, h4, h5 {
 .container .main-content {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    height: 750px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    align-content: space-between;
 }
 
 .container .main-content .info-boxes {
-    width: 47%;
-    background: gray;
-    margin-top: 3%
-    align-items: flex-start;
+    border: 1px solid black;
+    background: rgb(240, 239, 239);
+    width: 48%;
+    height: 28%;
+    margin-top: 3%;
+    text-align: left;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
 
+.container .main-content .info-boxes p {
+    margin-bottom: 4%;
+    line-height: 1.2;
+}
+
+.container .main-content .info-boxes button {
+    background: white;
+    border: 1px solid black;
+    border-radius: 6%;
+    padding: 1%;
+    width: 29%;
+    height: 17%;
+}
+
+.container .main-content .info-boxes button:hover {
+    background: black;
+	color: white;
+	cursor: pointer;
+}
+
+.container .main-content .info-boxes button:active {
+    transform: translateX(4px);
+}
+
+.container .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .bottom div {
+    width: 50%;
+}
+
+.container .bottom div h3 {
+text-align: left;
+margin-top: 7%;
+}
+
+.container .bottom div p {
+    text-align: left;
+}
+
+.container .bottom div ul {
+    list-style-type: square;
+    
+}
+
+.container .bottom div li {
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 2%;
+
+}
+
+.container .bottom .services-info-img {
+    width: 477px;
+    height: 300px;
+    margin-top: 3.5%;
+}
+
+.container footer {
+    margin-top: 10%;
 }

@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+.container {
+	margin: 20px auto;
+	text-align: center;
+    width: 1000px;
+    height: auto;
+}
+
+.container .nav-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    justify-content: space-between;
+}
+
+.container .nav-bar .links {
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+}
+
+.container .nav-bar .links a {
+    color: gray;
+    text-decoration: none;
+}
+
+.container .nav-bar .links a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.container .nav-bar .logo {
+    justify-content: flex-end;
+    margin-right: .5%;
+}
+
+.container .banner {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .banner .banner-div .banner-img {
+    height: 400px;
+    border-radius: 25%;
+    opacity: 0.8;
+}
+
+.container .banner .banner-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    line-height: 2;
+}
+
+.container .banner .banner-text h1 {
+    font-size: 45px;
+}
+
+.container .main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    border-top: 2px inset black;
+}
+
+.container .main .main-top {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container .main .main-top-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    line-height: 2;
+}
+
+.container .main .main-top-text h2 {
+    font-size: 30px;
+}
+
+.container .main .main-top-img {
+    width: 397px;
+    height: 300px;
+    border-radius: 25%;
+}
+
+.container .main .main-mid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .main .main-mid-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    line-height: 2;
+}
+
+.container .main .main-mid-text h2 {
+    font-size: 30px;
+}
+
+.container .main-mid-img {
+    width: 599px;
+    height: 300px;
+    border-radius: 25%;
+    opacity: 0.8;
+}
+
+.container .bottom {
+    width: 1000px;
+    height: auto;
+}
+
+.container .bottom .bottom-banner {
+    width: 1000px;
+    height: 400px;
+    margin-top: 4%;
+    border-radius: 25%;
+    opacity: 0.8;
+}
+
+.container footer {
+    margin-top: 5%;
+}
